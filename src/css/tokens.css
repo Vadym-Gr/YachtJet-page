@@ -1,0 +1,8 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --color-black: #040306;
+  --color-background: #0e1823;
+  --color-accent: #1b414b;
+  --color-white: #fbfbfb;
+  --color-text: var(--color-white);
+}
