@@ -1,0 +1,167 @@
+.rent__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.rent__content {
+  width: 100%;
+  min-width: 0;
+}
+
+.rent__title {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.rent__form {
+  margin-top: 40px;
+}
+
+.rent__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rent__input {
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 13px 18px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid rgb(251 251 251 / 20%);
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.rent__input::placeholder {
+  color: rgb(251 251 251 / 40%);
+  opacity: 1;
+}
+
+.rent__input:hover,
+.rent__input:focus {
+  border-color: rgb(251 251 251 / 50%);
+}
+
+.rent__input[aria-invalid='true'] {
+  border-color: #ffb4ab;
+}
+
+.rent__input--comment {
+  min-height: 108px;
+  height: 108px;
+  resize: vertical;
+}
+
+.rent__submit {
+  min-width: 122px;
+  margin-top: 40px;
+  padding: 14px 44px;
+}
+
+.rent__submit:disabled {
+  opacity: 0.5;
+}
+
+.rent__error,
+.rent__status {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.rent__error {
+  color: #ffb4ab;
+}
+
+.rent__status {
+  margin-top: 16px;
+  color: var(--color-white);
+}
+
+.rent__picture {
+  display: block;
+  min-width: 0;
+}
+
+.rent__image {
+  width: 100%;
+  height: 412px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+@media (min-width: 768px) {
+  .rent__container {
+    gap: 100px;
+  }
+
+  .rent__content {
+    max-width: 472px;
+    margin-inline: auto;
+  }
+
+  .rent__title {
+    font-size: 48px;
+  }
+
+  .rent__form {
+    margin-top: 50px;
+  }
+
+  .rent__input {
+    height: 54px;
+    padding-block: 17px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .rent__input--comment {
+    min-height: 116px;
+    height: 116px;
+  }
+
+  .rent__submit {
+    min-width: 194px;
+    margin-top: 50px;
+    padding: 18px 75px;
+  }
+
+  .rent__image {
+    height: 534px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rent__container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .rent__content {
+    flex: 0 0 472px;
+    margin-inline: 0;
+  }
+
+  .rent__picture {
+    flex: 0 0 658px;
+    order: -1;
+  }
+
+  .rent__image {
+    height: 536px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .rent__picture {
+    flex-basis: 768px;
+  }
+}
