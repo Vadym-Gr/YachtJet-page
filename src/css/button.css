@@ -2,6 +2,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  text-align: center;
   padding: 14px 32px;
   color: var(--color-white);
   background-color: var(--color-accent);

@@ -42,6 +42,7 @@
 
 .yacht-card__heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -49,18 +50,16 @@
 
 .yacht-card__name {
   min-width: 0;
-  overflow: hidden;
   color: var(--color-accent);
   font-size: 14px;
   line-height: 17px;
   letter-spacing: -0.045em;
-  text-overflow: ellipsis;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .yacht-card__category {
-  flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%;
   color: rgb(4 3 6 / 60%);
   font-size: 12px;
   line-height: 14px;
@@ -93,6 +92,7 @@
 }
 
 .yacht-card__detail dt {
+  min-width: 0;
   color: rgb(4 3 6 / 60%);
   text-transform: uppercase;
 }

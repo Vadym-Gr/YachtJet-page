@@ -104,15 +104,13 @@
   }
 
   .footer__top {
-    position: relative;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     min-height: 40px;
   }
 
   .footer__navigation {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    min-width: 0;
   }
 
   .footer .navigation-link {
@@ -120,6 +118,7 @@
   }
 
   .footer__socials {
+    justify-self: end;
     flex-basis: auto;
     margin-top: 0;
   }

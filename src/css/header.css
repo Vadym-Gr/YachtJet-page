@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 42px;
+  min-height: 42px;
   padding-inline: 20px;
   color: var(--color-accent);
   background-color: var(--color-white);
@@ -67,7 +67,9 @@
   align-items: center;
   justify-content: center;
   width: 91px;
-  height: 40px;
+  min-height: 40px;
+  padding: 6px;
+  text-align: center;
   color: var(--color-white);
   background-color: rgb(27 65 75 / 80%);
   border-radius: 8px;
@@ -126,7 +128,9 @@
 
   .header__bar {
     position: relative;
-    height: 48px;
+    min-height: 48px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     padding-inline: 28px;
   }
 
@@ -136,14 +140,12 @@
   }
 
   .header__navigation {
-    position: absolute;
-    left: 50%;
     display: block;
-    transform: translateX(-50%);
   }
 
   .header__socials {
     display: block;
+    justify-self: end;
   }
 
   .header__bar > .menu-toggle {
