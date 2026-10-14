@@ -1,10 +1,55 @@
+:root {
+  /* Interpolate between the Figma canvases instead of scaling cropped exports. */
+  --hero-height: clamp(812px, calc(668.87px + 38.1679vw), 962px);
+  --hero-overlap: clamp(59px, calc(51.37px + 2.0356vw), 67px);
+}
+
 .hero {
-  min-height: 812px;
+  --hero-image: url('../img/hero/hero@1x.jpg');
+  --hero-image-width: clamp(1106px, calc(777.76px + 87.5318vw), 1450px);
+  --hero-image-y: clamp(-430.78px, calc(-219.55px - 27.504vw), -322.69px);
+  position: relative;
+  isolation: isolate;
+  min-height: var(--hero-height);
   padding-block: 260px 120px;
-  background-image: url('../img/hero/hero-mobile@1x.png');
-  background-position: center top;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+}
+
+.hero::before {
+  left: 50%;
+  right: auto;
+  width: min(100%, 1450px);
+  transform: translateX(-50%);
+  background-image: var(--hero-image);
+  background-position: center var(--hero-image-y);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: var(--hero-image-width) auto;
+}
+
+.hero::after {
+  background:
+    linear-gradient(
+      to top,
+      var(--color-background) 0,
+      rgb(14 24 35 / 90%) 24px,
+      rgb(14 24 35 / 45%) 72px,
+      rgb(14 24 35 / 0%) 160px
+    ),
+    linear-gradient(
+      0deg,
+      rgb(17 19 31 / 80%) 42.623%,
+      rgb(17 19 31 / 31.4%) 84.119%,
+      rgb(17 19 31 / 0%) 99.937%
+    );
 }
 
 .hero__container {
@@ -39,15 +84,40 @@
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/hero/hero-mobile@2x.png');
+    --hero-image: url('../img/hero/hero@2x.jpg');
+  }
+}
+
+@media (min-width: 1450px) {
+  /* Keep the yacht at the Figma scale; extend only the surrounding sea. */
+  .hero {
+    background-image: var(--hero-image);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero::before {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 100px,
+      black calc(100% - 100px),
+      transparent
+    );
   }
 }
 
 @media (min-width: 768px) {
+  :root {
+    --hero-height: clamp(800px, calc(1205px - 31.640625vw), 962px);
+    --hero-overlap: clamp(35px, calc(115px - 6.25vw), 67px);
+  }
+
   .hero {
-    min-height: 962px;
+    --hero-image-width: 1450px;
+    --hero-image-y: clamp(-470.8px, calc(-370.75px - 7.8164vw), -430.78px);
     padding-top: 280px;
-    background-image: url('../img/hero/hero-tablet@1x.png');
   }
 
   .hero h1 {
@@ -67,39 +137,13 @@
   }
 }
 
-@media (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../img/hero/hero-tablet@2x.png');
-  }
-}
-
 @media (min-width: 1280px) {
   .hero {
-    min-height: 800px;
     padding-top: 235px;
-    background-image: url('../img/hero/hero-desktop@1x.png');
   }
 
   .hero h1 {
     max-width: 1001px;
     font-size: 80px;
-  }
-}
-
-@media (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../img/hero/hero-desktop@2x.png');
-  }
-}
-
-@media (min-width: 1440px) {
-  .hero {
-    background-image: url('../img/hero/hero-wide@1x.png');
-  }
-}
-
-@media (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../img/hero/hero-wide@2x.png');
   }
 }

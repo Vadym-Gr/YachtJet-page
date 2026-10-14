@@ -1,7 +1,64 @@
-<section class="about section" id="about" aria-labelledby="about-title">
+<section class="about" id="about" aria-labelledby="about-title">
   <div class="container">
-    <h2 id="about-title">
-      YachtJet fleet is here to take you on the ultimate adventure
-    </h2>
+    <div class="about__card">
+      <div class="about__content">
+        <h2 class="about__title" id="about-title">
+          YachtJet fleet is here to take you on the ultimate adventure
+        </h2>
+        <div class="about__text">
+          <p class="about__lead">
+            From spacious decks to state-of-the-art technology, our yachts are
+            designed to provide the perfect blend of luxury and functionality.
+          </p>
+          <p class="about__description">
+            Take a look at our selection below and choose the yacht that matches
+            your needs and preferences.No matter which yacht you choose, our
+            experienced crew will ensure that your journey is smooth and
+            enjoyable. Book now and get ready for an unforgettable adventure on
+            the high seas.
+          </p>
+        </div>
+      </div>
+      <picture class="about__picture">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./img/about/about-wide@1x.png 1x,
+            ./img/about/about-wide@2x.png 2x
+          "
+          width="1340"
+          height="470"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/about/about-desktop@1x.png 1x,
+            ./img/about/about-desktop@2x.png 2x
+          "
+          width="1180"
+          height="470"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/about/about-tablet@1x.png 1x,
+            ./img/about/about-tablet@2x.png 2x
+          "
+          width="704"
+          height="470"
+        />
+        <img
+          class="about__image"
+          src="./img/about/about-mobile@1x.png"
+          srcset="
+            ./img/about/about-mobile@1x.png 1x,
+            ./img/about/about-mobile@2x.png 2x
+          "
+          alt="Luxury YachtJet yacht on calm water beneath a mountainous coastline at dusk"
+          width="335"
+          height="395"
+        />
+      </picture>
+    </div>
   </div>
 </section>
