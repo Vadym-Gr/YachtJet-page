@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+
+.button:hover,
+.button:focus-visible {
+  color: var(--color-accent);
+  background-color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 40px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
