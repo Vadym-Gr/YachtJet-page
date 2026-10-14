@@ -1,8 +1,73 @@
 <section class="advantages section" aria-labelledby="advantages-title">
-  <div class="container">
+  <div class="container advantages__container">
     <h2 class="visually-hidden" id="advantages-title">
       Yacht rental advantages
     </h2>
-    <!-- The advantages list and photo will be implemented in stage 6. -->
+    <ol class="advantages__list" role="list">
+      <li class="advantages__item">
+        <span class="advantages__number" aria-hidden="true">01</span>
+        <p class="advantages__text">
+          Swimming and water sports: try your hand at water skiing
+        </p>
+      </li>
+      <li class="advantages__item">
+        <span class="advantages__number" aria-hidden="true">02</span>
+        <p class="advantages__text">Fishing: try to catch your own dinner</p>
+      </li>
+      <li class="advantages__item">
+        <span class="advantages__number" aria-hidden="true">03</span>
+        <p class="advantages__text">
+          Sightseeing tours: take a shore or island tour, enjoy the views and
+          sunsets from the water
+        </p>
+      </li>
+      <li class="advantages__item">
+        <span class="advantages__number" aria-hidden="true">04</span>
+        <p class="advantages__text">
+          Rest and relaxation: read a book or listen to music while enjoying the
+          outdoor atmosphere.
+        </p>
+      </li>
+    </ol>
+    <picture class="advantages__picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/advantages/advantages-wide@1x.png 1x,
+          ./img/advantages/advantages-wide@2x.png 2x
+        "
+        width="540"
+        height="424"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/advantages/advantages-desktop@1x.png 1x,
+          ./img/advantages/advantages-desktop@2x.png 2x
+        "
+        width="432"
+        height="424"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/advantages/advantages-tablet@1x.png 1x,
+          ./img/advantages/advantages-tablet@2x.png 2x
+        "
+        width="704"
+        height="424"
+      />
+      <img
+        class="advantages__image"
+        src="./img/advantages/advantages-mobile@1x.png"
+        srcset="
+          ./img/advantages/advantages-mobile@1x.png 1x,
+          ./img/advantages/advantages-mobile@2x.png 2x
+        "
+        alt="Covered yacht deck with a dining table, cushioned seating and a view of the sea"
+        width="335"
+        height="424"
+      />
+    </picture>
   </div>
 </section>
