@@ -23,8 +23,8 @@
         <source
           media="(min-width: 1440px)"
           srcset="
-            ./img/about/about-wide@1x.png 1x,
-            ./img/about/about-wide@2x.png 2x
+            ./img/about/about-wide@1x.webp 1x,
+            ./img/about/about-wide@2x.webp 2x
           "
           width="1340"
           height="470"
@@ -32,8 +32,8 @@
         <source
           media="(min-width: 1280px)"
           srcset="
-            ./img/about/about-desktop@1x.png 1x,
-            ./img/about/about-desktop@2x.png 2x
+            ./img/about/about-desktop@1x.webp 1x,
+            ./img/about/about-desktop@2x.webp 2x
           "
           width="1180"
           height="470"
@@ -41,18 +41,20 @@
         <source
           media="(min-width: 768px)"
           srcset="
-            ./img/about/about-tablet@1x.png 1x,
-            ./img/about/about-tablet@2x.png 2x
+            ./img/about/about-tablet@1x.webp 1x,
+            ./img/about/about-tablet@2x.webp 2x
           "
           width="704"
           height="470"
         />
         <img
           class="about__image"
-          src="./img/about/about-mobile@1x.png"
+          loading="lazy"
+          decoding="async"
+          src="./img/about/about-mobile@1x.webp"
           srcset="
-            ./img/about/about-mobile@1x.png 1x,
-            ./img/about/about-mobile@2x.png 2x
+            ./img/about/about-mobile@1x.webp 1x,
+            ./img/about/about-mobile@2x.webp 2x
           "
           alt="Luxury YachtJet yacht on calm water beneath a mountainous coastline at dusk"
           width="335"

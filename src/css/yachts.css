@@ -61,7 +61,7 @@
 
 .yacht-card__category {
   flex-shrink: 0;
-  color: rgb(4 3 6 / 40%);
+  color: rgb(4 3 6 / 60%);
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
@@ -93,7 +93,7 @@
 }
 
 .yacht-card__detail dt {
-  color: rgb(4 3 6 / 40%);
+  color: rgb(4 3 6 / 60%);
   text-transform: uppercase;
 }
 
