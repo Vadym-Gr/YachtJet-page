@@ -1,3 +1,25 @@
 <header class="header">
-  <!-- Header and navigation will be implemented in stage 2. -->
+  <div class="container header__container">
+    <div class="header__bar">
+      <a class="logo" href="./index.html" aria-label="YachtJet home"
+        >yachtjet</a
+      >
+      <nav class="header__navigation" aria-label="Main navigation">
+        <load src="partials/navigation-links.html" />
+      </nav>
+      <div class="header__socials">
+        <load src="partials/social-links.html" tone="accent" />
+      </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        data-menu-open
+        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <img src="./img/icons/menu.svg" alt="" width="28" height="28" />
+      </button>
+    </div>
+  </div>
 </header>
