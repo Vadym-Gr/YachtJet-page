@@ -31,7 +31,8 @@
   letter-spacing: -0.03em;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus-visible {
   color: var(--color-background);
 }
 
@@ -46,7 +47,8 @@
   border-radius: 4px;
 }
 
-.menu-toggle:hover {
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
   background-color: rgb(27 65 75 / 10%);
 }
 
@@ -77,6 +79,11 @@
 .navigation-link:hover,
 .navigation-link:focus-visible {
   background-color: var(--color-accent);
+}
+
+.header__navigation .navigation-link:focus-visible {
+  outline-color: var(--color-accent);
+  outline-offset: 1px;
 }
 
 .social-links {

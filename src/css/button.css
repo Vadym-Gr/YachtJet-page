@@ -24,6 +24,10 @@
   background-color: var(--color-white);
 }
 
+.button:focus-visible {
+  outline-color: var(--color-white);
+}
+
 @media (min-width: 768px) {
   .button {
     padding: 16px 40px;
