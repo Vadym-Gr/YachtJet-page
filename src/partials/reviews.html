@@ -1,8 +1,134 @@
 <section class="reviews section" id="reviews" aria-labelledby="reviews-title">
-  <div class="container">
-    <h2 id="reviews-title">
+  <div class="container reviews__container">
+    <h2 class="reviews__title" id="reviews-title">
       YachtJet take pride in providing the best possible service and experience
       to our customers
     </h2>
+    <p class="reviews__description">
+      Our customers have enjoyed unforgettable moments on our yachts. Don't just
+      take our word for it - read on to find out what they have to say about
+      their journey with us.
+    </p>
+    <div
+      class="carousel reviews__carousel"
+      data-carousel
+      data-carousel-label="Reviews"
+      role="group"
+      aria-roledescription="carousel"
+      aria-label="Customer reviews"
+    >
+      <button
+        class="carousel__control carousel__control--previous"
+        type="button"
+        data-carousel-previous
+        aria-label="Previous review"
+        aria-controls="review-cards"
+        disabled
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+      <div
+        class="carousel__viewport"
+        data-carousel-viewport
+        tabindex="0"
+        aria-label="Customer review cards. Use left and right arrow keys to browse."
+      >
+        <ul class="carousel__track" id="review-cards" data-carousel-track>
+          <li class="carousel__slide">
+            <article class="review-card" aria-labelledby="review-john-wax">
+              <img
+                class="review-card__photo"
+                src="./img/reviews/john-wax@1x.png"
+                srcset="
+                  ./img/reviews/john-wax@1x.png 1x,
+                  ./img/reviews/john-wax@2x.png 2x
+                "
+                alt="Portrait of John Wax"
+                width="56"
+                height="56"
+              />
+              <h3 class="review-card__name" id="review-john-wax">John Wax</h3>
+              <blockquote class="review-card__quote">
+                <p>
+                  I rented the Lagoon 620 with my family for a week-long
+                  vacation and it was the best decision ever. The yacht was
+                  spacious, comfortable, and luxurious, and the crew took care
+                  of everything.
+                </p>
+              </blockquote>
+            </article>
+          </li>
+          <li class="carousel__slide">
+            <article
+              class="review-card"
+              aria-labelledby="review-victoria-romashenko"
+            >
+              <img
+                class="review-card__photo"
+                src="./img/reviews/victoria-romashenko@1x.png"
+                srcset="
+                  ./img/reviews/victoria-romashenko@1x.png 1x,
+                  ./img/reviews/victoria-romashenko@2x.png 2x
+                "
+                alt="Portrait of Victoria Romashenko"
+                width="56"
+                height="56"
+              />
+              <h3 class="review-card__name" id="review-victoria-romashenko">
+                Victoria Romashenko
+              </h3>
+              <blockquote class="review-card__quote">
+                <p>
+                  The Sunseeker Manhattan 66 was the perfect choice for our
+                  romantic getaway. The yacht was beautifully designed, with all
+                  the amenities we needed, and the crew was attentive and
+                  friendly.
+                </p>
+              </blockquote>
+            </article>
+          </li>
+          <li class="carousel__slide">
+            <article class="review-card" aria-labelledby="review-ihor-trachuk">
+              <img
+                class="review-card__photo"
+                src="./img/reviews/ihor-trachuk@1x.png"
+                srcset="
+                  ./img/reviews/ihor-trachuk@1x.png 1x,
+                  ./img/reviews/ihor-trachuk@2x.png 2x
+                "
+                alt="Portrait of Ihor Trachuk"
+                width="56"
+                height="56"
+              />
+              <h3 class="review-card__name" id="review-ihor-trachuk">
+                Ihor Trachuk
+              </h3>
+              <blockquote class="review-card__quote">
+                <p>
+                  The Azimut 80 was the most luxurious yacht I've ever been on.
+                  The cabins were spacious and elegant, and the outdoor areas
+                  were perfect for relaxing and entertaining. Worth every penny!
+                </p>
+              </blockquote>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="carousel__control carousel__control--next"
+        type="button"
+        data-carousel-next
+        aria-label="Next review"
+        aria-controls="review-cards"
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+      <p
+        class="visually-hidden"
+        data-carousel-status
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </div>
   </div>
 </section>
