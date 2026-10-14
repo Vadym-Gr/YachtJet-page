@@ -1,5 +1,20 @@
 # Vanilla App Template
 
+## Налаштування YachtJet-page
+
+- Production-збірка: `npm ci`, потім `npm run build`. Результат — папка `dist`.
+- Шлях для GitHub Pages у `package.json`: `--base=/YachtJet-page/`.
+- Workflow використовує Node.js 24 і має `permissions: contents: write`, щоб
+  публікувати збірку в гілку `gh-pages`.
+- Після першого успішного деплою відкрий `Settings` > `Pages` і вибери
+  `Deploy from a branch`, гілку `gh-pages`, папку `/(root)`.
+- Адреса сайту: https://vadym-gr.github.io/YachtJet-page/.
+- Повторний запуск доступний у `Actions` > `Build and deploy to GitHub Pages`
+  > `Run workflow` після публікації оновленого workflow.
+
+Workflow виконує встановлення залежностей, збірку та деплой. Окремий лінтинг
+і автоматична оптимізація зображень у поточному шаблоні не налаштовані.
+
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
 додаткових можливостей [звернись до документації](https://vitejs.dev/).
 
