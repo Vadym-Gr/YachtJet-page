@@ -1,7 +1,268 @@
-<section class="yachts section" id="yachts" aria-labelledby="yachts-title">
-  <div class="container">
-    <h2 id="yachts-title">
+<section class="yachts" id="yachts" aria-labelledby="yachts-title">
+  <div class="container yachts__container">
+    <h2 class="yachts__title" id="yachts-title">
       Choose your dream yacht and sail away into the sunset
     </h2>
+    <div
+      class="carousel yachts__carousel"
+      data-carousel
+      data-carousel-label="Yachts"
+      role="group"
+      aria-roledescription="carousel"
+      aria-label="Available yachts"
+    >
+      <button
+        class="carousel__control carousel__control--previous"
+        type="button"
+        data-carousel-previous
+        aria-label="Previous yacht"
+        aria-controls="yacht-cards"
+        disabled
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+      <div
+        class="carousel__viewport"
+        data-carousel-viewport
+        tabindex="0"
+        aria-label="Yacht cards. Use left and right arrow keys to browse."
+      >
+        <ul class="carousel__track" id="yacht-cards" data-carousel-track>
+          <li class="carousel__slide">
+            <article class="yacht-card" aria-labelledby="yacht-arrow">
+              <picture class="yacht-card__picture"
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/yachts/arrow-wide@1x.png 1x,
+                    ./img/yachts/arrow-wide@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/yachts/arrow-desktop@1x.png 1x,
+                    ./img/yachts/arrow-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/yachts/arrow-tablet@1x.png 1x,
+                    ./img/yachts/arrow-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="yacht-card__image"
+                  src="./img/yachts/arrow-mobile@1x.png"
+                  srcset="
+                    ./img/yachts/arrow-mobile@1x.png 1x,
+                    ./img/yachts/arrow-mobile@2x.png 2x
+                  "
+                  alt="Arrow sailing yacht viewed from above on clear turquoise water"
+                  width="302"
+                  height="240"
+                />
+              </picture>
+              <div class="yacht-card__body">
+                <div class="yacht-card__heading">
+                  <h3 class="yacht-card__name" id="yacht-arrow" title="Arrow">
+                    Arrow
+                  </h3>
+                  <p class="yacht-card__category">Luxury yachts</p>
+                </div>
+                <div class="yacht-card__divider" aria-hidden="true"></div>
+                <dl class="yacht-card__details">
+                  <div class="yacht-card__detail">
+                    <dt>Length</dt>
+                    <dd>48m(155ft)</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Builder</dt>
+                    <dd>Admiral</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Built</dt>
+                    <dd>2021</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Guests</dt>
+                    <dd>11 in 5 cabins</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Price</dt>
+                    <dd>€33,500,000</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </li>
+          <li class="carousel__slide">
+            <article class="yacht-card" aria-labelledby="yacht-benetti">
+              <picture class="yacht-card__picture"
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/yachts/benetti-wide@1x.png 1x,
+                    ./img/yachts/benetti-wide@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/yachts/benetti-desktop@1x.png 1x,
+                    ./img/yachts/benetti-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/yachts/benetti-tablet@1x.png 1x,
+                    ./img/yachts/benetti-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="yacht-card__image"
+                  src="./img/yachts/benetti-tablet@1x.png"
+                  srcset="
+                    ./img/yachts/benetti-tablet@1x.png 1x,
+                    ./img/yachts/benetti-tablet@2x.png 2x
+                  "
+                  alt="Benetti yacht with three masts viewed from above on dark water"
+                  width="304"
+                  height="268"
+                />
+              </picture>
+              <div class="yacht-card__body">
+                <div class="yacht-card__heading">
+                  <h3
+                    class="yacht-card__name"
+                    id="yacht-benetti"
+                    title="BENETTI OASIS 40M BO122"
+                  >
+                    BENETTI OASIS 40M BO122
+                  </h3>
+                  <p class="yacht-card__category">Luxury yachts</p>
+                </div>
+                <div class="yacht-card__divider" aria-hidden="true"></div>
+                <dl class="yacht-card__details">
+                  <div class="yacht-card__detail">
+                    <dt>Length</dt>
+                    <dd>41m (133ft)</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Shipyard</dt>
+                    <dd>Benetti</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Built</dt>
+                    <dd>2025</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Guests</dt>
+                    <dd>10 in 5 cabins</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Price</dt>
+                    <dd>€23,210,000</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </li>
+          <li class="carousel__slide">
+            <article class="yacht-card" aria-labelledby="yacht-belle-anna">
+              <picture class="yacht-card__picture"
+                ><source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/yachts/belle-anna-wide@1x.png 1x,
+                    ./img/yachts/belle-anna-wide@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/yachts/belle-anna-desktop@1x.png 1x,
+                    ./img/yachts/belle-anna-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/yachts/belle-anna-desktop@1x.png 1x,
+                    ./img/yachts/belle-anna-desktop@2x.png 2x
+                  "
+                />
+                <img
+                  class="yacht-card__image"
+                  src="./img/yachts/belle-anna-desktop@1x.png"
+                  srcset="
+                    ./img/yachts/belle-anna-desktop@1x.png 1x,
+                    ./img/yachts/belle-anna-desktop@2x.png 2x
+                  "
+                  alt="Belle Anna motor yacht near a rocky coastline at sunset"
+                  width="304"
+                  height="268"
+                />
+              </picture>
+              <div class="yacht-card__body">
+                <div class="yacht-card__heading">
+                  <h3
+                    class="yacht-card__name"
+                    id="yacht-belle-anna"
+                    title="BELLE ANNA"
+                  >
+                    BELLE ANNA
+                  </h3>
+                  <p class="yacht-card__category">Luxury yachts</p>
+                </div>
+                <div class="yacht-card__divider" aria-hidden="true"></div>
+                <dl class="yacht-card__details">
+                  <div class="yacht-card__detail">
+                    <dt>Length</dt>
+                    <dd>50m(155ft)</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Shipyard</dt>
+                    <dd>ISA</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Built</dt>
+                    <dd>2012</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Guests</dt>
+                    <dd>12 in 6 cabins</dd>
+                  </div>
+                  <div class="yacht-card__detail">
+                    <dt>Price</dt>
+                    <dd>€21,000,000</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="carousel__control carousel__control--next"
+        type="button"
+        data-carousel-next
+        aria-label="Next yacht"
+        aria-controls="yacht-cards"
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+      <p
+        class="visually-hidden"
+        data-carousel-status
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </div>
+    <a class="button button--outline yachts__rental" href="#rent"
+      >Yacht rental</a
+    >
   </div>
 </section>

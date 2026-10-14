@@ -12,6 +12,12 @@
   letter-spacing: -0.02em;
 }
 
+.button--outline {
+  padding: 13px 31px;
+  background-color: transparent;
+  border: 1px solid rgb(251 251 251 / 35%);
+}
+
 .button:hover,
 .button:focus-visible {
   color: var(--color-accent);
@@ -23,5 +29,9 @@
     padding: 16px 40px;
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .button--outline {
+    padding: 15px 39px;
   }
 }
